@@ -1,0 +1,144 @@
+% Packages input
+
+% General and structure
+\usepackage[utf8]{inputenc} % Encoding requirement
+\usepackage[T1]{fontenc} % Enhancing font rendering
+\usepackage[brazilian]{babel} % Setting language
+\usepackage{icomma} % Adjusting number comma
+\usepackage{lmodern} % Enhancing font (Latin Modern)
+\usepackage{microtype} % Enhancing typography
+\usepackage{geometry} % Editing page size
+\usepackage{fancyhdr} % Editing header and footer
+\usepackage[titles]{tocloft} % Editing table of contents
+\usepackage{titlesec} % Customizing section title
+\usepackage[intoc,portuguese]{nomencl} % Inserting nomencalture
+\usepackage[square,numbers,sort&compress]{natbib} % Inserting bibliography
+\usepackage{csquotes} % Adjusting babel and bibliography
+\usepackage{appendix} % Managing appendices
+\usepackage[x11names,table]{xcolor} % Adding colors
+\usepackage{float} % Positioning figures and tables
+\usepackage{placeins} % Limiting figures and tables position
+\usepackage{stackengine} % Enhancing elements position
+\usepackage{adjustbox} % Manipulating elements
+\usepackage{setspace} % Editing lines space
+\usepackage{enumitem} % Customizing lists
+% \usepackage{enumerate}
+\usepackage{pageslts} % Setting last page
+\usepackage{pbox} % Creating box areas
+\usepackage{transparent} % Inserting transparency
+\usepackage{etoolbox} % Inserting advanced commands
+\usepackage{pdfpages} % Inserting pdf documents
+\usepackage{xifthen} % Using IF command
+
+% AMS math and symbols
+\usepackage{amsmath} % Enhancing math typesetting
+\usepackage{amssymb} % Expanding math symbols
+\usepackage{amsfonts} % Expanding math style
+\usepackage{amsthm} % Formatting theorem structures
+\usepackage{mathtools} % Expanding amsmath tools
+\usepackage{bm} % Inserting bold math symbols
+\usepackage{textcomp} % Adding symbols
+\usepackage{wasysym} % Adding symbols
+
+% Chemestry
+\usepackage[version=4]{mhchem}
+\usepackage{textgreek}
+
+% Figures 
+\usepackage{graphicx} % Inserting images
+\usepackage{wallpaper}  % Inserting backgroung image
+\usepackage{caption} % Customizing caption
+\usepackage{wrapfig} % Positioning figures
+\usepackage{subcaption} % Customizing multiple captions
+\usepackage{tikz} % Overlapping elements
+
+% Plots
+\usepackage{pgfplots} % Inserting plots
+
+% Tables
+\usepackage{tabularx} % Enhancing table adjustments 
+\usepackage{multirow} % Creating multirow cells table
+\usepackage{longtable} % Inserting multiple pages table
+\usepackage{booktabs} % Customizing table appearance 
+\usepackage{makecell} % Enhancing cell formatting
+\usepackage{colortbl}% Coloring tables
+\usepackage{arydshln}
+
+% Text
+\usepackage{lipsum} % Inserting random text
+\usepackage{indentfirst} % Indenting first paragraph
+%\usepackage[none]{hyphenat} % Remove hyphenation
+\usepackage[hyphens]{url} % Allowing URL hyphenation
+\usepackage{multicol} % Enabling columns
+\usepackage{ragged2e} % Aligning text
+\usepackage{xfrac} % Writing horizontal fraction
+\usepackage{verbatim} % Displaying uninterpreted code
+\usepackage{listings} % Customize uninterpreted code
+\usepackage[hidelinks]{hyperref} % Inserting hyperlinks
+\usepackage[nameinlink,brazilian]{cleveref} % Automatization citations
+\usepackage{accents} 
+
+% Configuration
+
+% Layout parameters
+\geometry{a4paper,left=30mm,right=30mm,top=25mm,bottom=25mm}
+\onehalfspacing
+
+% Image extensions
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.eps}
+
+% Pgfplots version
+\pgfplotsset{compat=1.18}
+
+% Section levels
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Lists customization
+\makeatletter
+\patchcmd{\listoffigures}
+    {\chapter*{\listfigurename}}
+    {\chapter*{\centering\normalsize\bfseries \MakeUppercase{\listfigurename}}}
+    {}{}
+
+\patchcmd{\listoftables}
+    {\chapter*{\listtablename}}
+    {\chapter*{\centering\normalsize\bfseries \MakeUppercase{\listtablename}}}
+    {}{}
+\makeatother
+
+% TikZ package calculations
+\usetikzlibrary{calc}
+
+% Hyperlinks parameters
+\hypersetup{
+    colorlinks=false,
+    linkcolor=blue,   
+    citecolor=blue,
+    urlcolor=blue,
+    pdfpagemode=UseOutlines
+}
+
+% Script parameters
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    frame=single,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{orange},
+    breaklines=true,
+}
+
+% Table parameters
+\renewcommand{\arraystretch}{1.35}
+\setlength{\arrayrulewidth}{1pt}
+
+% Bibliography
+\bibliographystyle{unsrtnat}
+
+% Nomenclature
+\makenomenclature
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}

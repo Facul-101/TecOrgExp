@@ -1,0 +1,78 @@
+\subsection{Modificações de última hora}
+
+No laboratório, alguns materiais e condições não eram exatamente os previstos no planejamento, o que exigiu pequenas adaptações na rota antes de iniciar os experimentos. Essas mudanças e seus motivos são descritos a seguir, e já estão incorporadas ao procedimento apresentado na Seção~\ref{subsec:proc_exp}.
+
+\subsubsection{Substituição do óleo de coco pelo óleo de coco babaçu}
+
+A única modificação de matéria-prima foi a substituição do óleo de coco pelo óleo de coco babaçu. Esse óleo é obtido da extração das sementes (amêndoas) do babaçu, em contraste com o óleo de coco, extraído da polpa (parte branca) do fruto. Apesar da diferença de origem e de processo de extração, ambos apresentam composição muito semelhante, com elevado teor de ácido láurico (C12:0) e ácido mirístico (C14:0) — cujas propriedades já foram detalhadas na Seção~\ref{subsubsec:oleo_babacu}. Por esse motivo, não foram necessárias grandes modificações na rota executada.
+
+Em decorrência da troca de matéria-prima, os índices de saponificação foram recalculados a partir de valores de literatura específicos do óleo de babaçu, reunidos na Tabela~\ref{tab:is_babacu}.
+
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \caption{Índices de saponificação do óleo de coco babaçu e do óleo de soja segundo a literatura.}
+    \label{tab:is_babacu}
+    \begin{tabularx}{\textwidth}{l >{\raggedright\arraybackslash}X c}
+        \toprule
+        \textbf{Tipo de óleo} & \textbf{Índices de saponificação da literatura (mg KOH/g)} & \textbf{Média (mg KOH/g)} \\
+        \midrule
+        Óleo de coco babaçu &  236,69; 239,62; 235,50; 238,74 \cite{ferrari2015obtention}; \newline 236,9 \cite{ferreira2012comparison}; 236,9 \cite{ferreira2011comparative}; & 237,39 \\
+        Óleo de soja & 195 \cite{aliyari2021improving}; 181,32; 182,16 \cite{chen2019characterization}; \newline 202,32 \cite{mohammed2024improving}; 193,8 \cite{zeleke2024impact} & 193,80 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Observa-se que o índice de saponificação do óleo de babaçu (237,39~mg~KOH/g) é inferior ao do óleo de coco comum (255,84~mg~KOH/g), o que implica menor consumo de NaOH por grama de óleo. Aplicando a conversão para a base NaOH (Equação~\ref{eq:is_naoh}), obtêm-se os valores da Tabela~\ref{tab:is_naoh_babacu}.
+
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \caption{Índices de saponificação do óleo de babaçu e do óleo de soja convertidos para a base NaOH.}
+    \label{tab:is_naoh_babacu}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Tipo de óleo} & \textbf{Média IS de KOH} & \textbf{Média IS de NaOH} \\
+        \midrule
+        Óleo de coco babaçu & 237,39 & 169,25 \\
+        Óleo de soja & 193,80 & 138,17 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+A partir desses índices, recalculou-se a quantidade de NaOH necessária para saponificar amostras de 120~g, em função do percentual de óleo de babaçu na mistura, conforme a Tabela~\ref{tab:naoh_babacu}.
+
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \caption{Quantidade de NaOH necessária para saponificar 120~g de mistura em função do percentual de óleo de babaçu.}
+    \label{tab:naoh_babacu}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Ol. babaçu (\%)} & \textbf{Ol. babaçu (g)} & \textbf{Ol. soja (g)} & \textbf{Volume total (ml)} & \textbf{NaOH p/ sap. (g)} \\
+        \midrule
+        0\%   & 0     & 120   & 110,76 & 16,58 \\
+        10\%  & 12    & 108   & 110,63 & 16,95 \\
+        20\%  & 24    & 96    & 110,50 & 17,33 \\
+        30\%  & 36    & 84    & 110,36 & 17,70 \\
+        40\%  & 48    & 72    & 110,23 & 18,07 \\
+        50\%  & 60    & 60    & 110,10 & 18,45 \\
+        60\%  & 72    & 48    & 109,97 & 18,82 \\
+        66\%  & 79,2  & 40,8  & 109,89 & 19,04 \\
+        70\%  & 84    & 36    & 109,84 & 19,19 \\
+        80\%  & 96    & 24    & 109,70 & 19,56 \\
+        90\%  & 108   & 12    & 109,57 & 19,94 \\
+        100\% & 120   & 0     & 109,44 & 20,31 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{Adaptações no procedimento experimental}
+
+Além da substituição da matéria-prima, foram necessárias as seguintes adaptações em relação ao planejamento inicial:
+
+\begin{itemize}
+    \item O aquecimento inicial do óleo passou a ser conduzido a 60~°C;
+    \item A solução alcalina não foi aquecida, sendo preparada à temperatura ambiente;
+    \item O tempo de avaliação do fim da reação foi reduzido para cerca de 15~minutos, com verificações a cada 3~minutos quando necessário.
+\end{itemize}

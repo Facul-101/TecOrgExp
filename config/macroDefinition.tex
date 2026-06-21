@@ -1,0 +1,50 @@
+% Course information
+\newcommand{\degreeCourse}{Engenharia Química}
+\newcommand{\engDegreeCourse}{Chemical Engineering}
+\newcommand{\degreeType}{Engenheiro Químico}
+
+% Babel package translation fix
+\renewcommand{\contentsname}{Sumário}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\tablename}{Tabela}
+\renewcommand{\listtablename}{Lista de Tabelas}
+\renewcommand\bibname{Referências}
+
+% Listings package translation fix
+\renewcommand{\lstlistingname}{Listagem}
+
+% Nomenclature groups
+\renewcommand\nomgroup[1]{
+    \item[\bfseries
+    \ifstrequal{#1}{A}{Abreviações}{%
+    \ifstrequal{#1}{P}{Propriedades}{%
+    \ifstrequal{#1}{G}{Letras Gregas}{%
+    \ifstrequal{#1}{R}{Letras Romanas}{%
+    \ifstrequal{#1}{S}{Sobrescritos}{%
+    \ifstrequal{#1}{U}{Subscritos}{%
+    \ifstrequal{#1}{X}{Outros Símbolos}{}}}}}}}
+]}
+
+% Text reference commands
+\newcommand{\figref}[1]{\hyperref[#1]{Figura~\ref{#1}}}
+\newcommand{\tabref}[1]{\hyperref[#1]{Tabela~\ref{#1}}}
+\newcommand{\eqnref}[1]{\hyperref[#1]{Equação~(\ref{#1})}}
+\newcommand{\capref}[1]{\hyperref[#1]{Capítulo~(\ref{#1})}}
+\newcommand{\secref}[1]{\hyperref[#1]{Seção~\ref{#1}}}
+\newcommand{\apxref}[1]{\hyperref[#1]{Apêndice~\ref{#1}}}
+\newcommand{\supref}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
+
+% Appendix addition command
+\newcommand{\addappendix}[1]{%
+    \refstepcounter{chapter}%
+    \phantomsection%
+    \chapter*{Apêndice \thechapter{} - #1}%
+    \addcontentsline{toc}{chapter}{Apêndice \thechapter{} - #1}}
+
+% Supplement addition command
+\newcommand{\addsupplement}[1]{%
+    \refstepcounter{chapter}%
+    \phantomsection%
+    \chapter*{Anexo \thechapter{} - #1}%
+    \addcontentsline{toc}{chapter}{Anexo \thechapter{} - #1}}

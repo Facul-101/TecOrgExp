@@ -1,0 +1,29 @@
+%Vetor
+\newcommand{\vetor}[1] {\underaccent{\sim}{#1}}
+\newcommand{\matriz}[1] {\underaccent{\approx}{#1}}
+
+\makeatletter
+\newif\ifcenter@asb@\center@asb@false
+\def\center@arstrutbox{
+    \setbox\@arstrutbox\hbox{$\vcenter{\box\@arstrutbox}$}
+    }
+\newcommand*{\CenteredArraystretch}[1]{
+    \ifcenter@asb@\else
+      \pretocmd{\@mkpream}{\center@arstrutbox}{}{}
+      \center@asb@true
+    \fi
+    \renewcommand{\arraystretch}{#1}
+    }
+\makeatother
+
+%Fluxo de massa
+\newcommand{\fluxo}[2] {\vetor{#1}''_#2}
+\newcommand{\fluxoUni}[3] {{#1}''_{#2,#3}}
+\newcommand{\fluxoDifMolar}[0]{{\fluxo{J}{A}} {}^{,n}}
+\newcommand{\fluxoDifMassa}[0]{{\fluxo{J}{A}} {}^{,m}}
+
+%Integral 
+\newcommand{\intA}[3]{\int_{#1_{#2}} #3 \,\mathrm{d}#1}
+\newcommand{\intVC}[4]{\int_{#1_{#2}(#3)} #4 \,\mathrm{d}#1}
+
+\newcommand{\porosidade}[0]{\boldsymbol{\varepsilon}}

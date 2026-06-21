@@ -1,0 +1,75 @@
+\documentclass[12pt]{report}
+
+% Document configuration
+\input{config/preamble}
+\input{config/fancyHF}
+
+% Macros input 
+\input{config/macroDefinition}
+\input{config/mathNotation}
+\input{config/transferenciaMassa}
+
+\begin{document}
+
+    % Front matter
+
+    % Header and footer definition
+    \pagestyle{frontFancy}
+
+    % Cover input
+    \input{src/cover}
+
+    % Contents input
+    \tableofcontents
+    \clearpage
+
+    % Front inputs
+
+    % List of figures input
+    \phantomsection
+    \listoffigures
+    \addcontentsline{toc}{chapter}{Lista de Figuras}
+    \clearpage
+
+    % List of tables input
+    \phantomsection
+    \listoftables
+    \addcontentsline{toc}{chapter}{Lista de Tabelas}
+    \clearpage
+
+    % Nomenclature input
+    % \input{src/nomenclature}
+    % \printnomenclature
+    % \begin{tikzpicture}[remember picture, overlay]
+    %     \fill[white] (current page.north west) ++(2.5cm,-5cm) rectangle ++(7.5cm,-1.5cm);
+    %     \node at ($(current page.north) + (0,-5.25cm)$) {\centering\normalsize\bfseries NOMENCLATURA};
+    % \end{tikzpicture}
+    % \clearpage
+
+    % Main matter
+
+    % Header and footer definition
+    \pagestyle{mainFancy}
+
+    % Sections input
+    \input{src/introducao}
+    \input{src/revisaoBibliografica}
+    \input{src/objetivo}
+    \input{src/metodologia}
+    \input{src/discussao}
+    \input{src/conclusao}
+
+    % Back matter
+
+    % Bibliography input
+    \phantomsection
+    \bibliography{src/references}
+    \addcontentsline{toc}{chapter}{Referências Bibliográficas}
+    % \nocite{*}
+    \clearpage
+
+    % Appendix input
+
+    % Supplement input
+
+\end{document}
