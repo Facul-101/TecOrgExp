@@ -27,7 +27,7 @@ Cada rota foi avaliada segundo seis critérios: custo de matéria-prima, simplic
         \midrule
         Custo de matéria-prima & \textbf{3}: óleo de coco tem custo moderado & \textbf{5}: óleo de soja costuma ser mais barato e amplamente disponível & \textbf{2}: óleo de rícino geralmente é mais caro, elevando o custo final \\
         Simplicidade operacional & \textbf{3}: processo a quente exige aquecimento e maior controle térmico & \textbf{4}: processo a frio é mais simples na bancada e demanda menos equipamento & \textbf{3}: exige aquecimento e controle de viscosidade/diluição no sabão líquido \\
-        Segurança (toxicidade) & \textbf{3}: uso de NaOH e aquecimento aumenta o risco no manuseio & \textbf{4}: ainda usa NaOH, mas sem aquecimento intenso o risco operacional é menor & \textbf{3}: uso de KOH com aquecimento mantém risco químico \\
+        Segurança (toxicidade) & \textbf{3}: uso de NaOH e aquecimento aumenta o risco no manuseio & \textbf{4}: ainda usa NaOH, mas sem aquecimento intenso o risco operacional é menor & \textbf{3}: uso de KOH com aquecimento aumenta o risco no manuseio \\
         Viabilidade laboratorial & \textbf{5}: execução direta e tempo curto para avaliação & \textbf{2}: viável, porém com tempo de cura longo (4 a 6 semanas), o que limita o cronograma experimental & \textbf{3}: viável, mas com alta complexidade operacional devido ao controle constante de viscosidade e ajuste de processo \\
         Rendimento & \textbf{4}: boa conversão e boa dureza de barra no processo a quente & \textbf{2}: conversão aceitável, mas sabão tende a ser mais macio e com cura mais longa & \textbf{4}: boa performance para sabão líquido, com boa solubilidade e espuma \\
         Impacto ambiental & \textbf{3}: maior consumo de energia devido ao aquecimento & \textbf{4}: menor gasto energético por ser processo a frio, com possibilidade de perda de produto por rancificação & \textbf{3}: também demanda energia térmica e não utiliza matéria-prima residual \\
@@ -45,37 +45,46 @@ Espera-se obter um sabão com dureza moderada, boa formação de espuma e bom po
 
 \subsubsection{Índice de saponificação}
 
-O índice de saponificação é definido como a quantidade, em miligramas, de hidróxido de potássio (KOH) necessária para saponificar um grama de uma determinada amostra de óleo ou gordura. Sua determinação experimental é realizada por titulação, empregando os seguintes reagentes:
+O índice de saponificação é definido como o número de miligramas de hidróxido de potássio (KOH) necessário para saponificar um grama do produto analisado. Uma das formas de determiná-lo experimentalmente é por titulação, sendo a norma ISO 3657 \cite{iso3657} um método padronizado para esse fim, cujo princípio consiste em saponificar a amostra por refluxo com excesso de KOH etanólico e, em seguida, titular o excesso de base com ácido clorídrico padrão. Esse método emprega os seguintes reagentes:
 
 \begin{itemize}
-    \item óleo (amostra a ser medida);
-    \item solução de hidróxido de potássio (KOH);
-    \item fenolftaleína;
-    \item ácido para neutralização do KOH, geralmente HCl.
+    \item Etanol a 95\% (em volume);
+    \item Solução etanólica de hidróxido de potássio, $c(\text{KOH}) = 0{,}5$~mol/L (incolor ou amarelo-palha);
+    \item Solução padrão de ácido clorídrico, $c(\text{HCl}) = 0{,}5$~mol/L;
+    \item Indicador: solução de azul de álcali 6B (preferencial) ou de fenolftaleína;
+    \item Reguladores de ebulição.
 \end{itemize}
 
-\noindent além das seguintes vidrarias e equipamentos:
+\noindent Enquanto a aparelhagem inclui:
 
 \begin{itemize}
-    \item erlenmeyer;
-    \item condensador de refluxo;
-    \item proveta.
+    \item Erlenmeyer de 250~ml, de vidro resistente a álcali e com junta esmerilhada;
+    \item Condensador de refluxo;
+    \item Dispositivo de aquecimento (banho-maria ou chapa elétrica);
+    \item Bureta de 50~ml, graduada em 0,1~ml;
+    \item Pipeta de 25~ml;
+    \item Balança analítica.
 \end{itemize}
 
-O procedimento de determinação segue as etapas abaixo:
+O procedimento previsto pela norma compreende as etapas abaixo:
 
 \begin{enumerate}
-    \item adicionar uma massa conhecida de óleo no erlenmeyer;
-    \item adicionar solução de hidróxido de potássio em excesso no erlenmeyer;
-    \item acoplar o erlenmeyer ao condensador de refluxo;
-    \item manter a solução em ebulição branda por 30 minutos;
-    \item após esse período, deixar a solução esfriar por cerca de 5 minutos;
-    \item adicionar o ácido de neutralização à proveta;
-    \item adicionar algumas gotas de fenolftaleína ao erlenmeyer (cerca de duas gotas);
-    \item titular a solução do erlenmeyer até o desaparecimento da coloração rosa.
+    \item Pesar cerca de 2~g de amostra no erlenmeyer, ajustando a massa conforme o índice de saponificação esperado, de modo que aproximadamente metade do KOH seja neutralizada;
+    \item Adicionar 25,0~ml da solução etanólica de KOH e alguns reguladores de ebulição;
+    \item Acoplar o condensador de refluxo e manter a mistura em ebulição branda, sob agitação ocasional, por 60 minutos (ou 2 horas, no caso de óleos de alto ponto de fusão e de difícil saponificação);
+    \item Adicionar à solução ainda quente de 0,5 a 1~ml do indicador;
+    \item Titular com a solução padrão de HCl até a viragem do indicador no ponto de equivalência;
+    \item Realizar uma prova em branco, repetindo o procedimento com outros 25,0~ml de KOH etanólico, porém sem a amostra.
 \end{enumerate}
 
-Alternativamente, o índice de saponificação de uma mistura de óleos pode ser estimado a partir de uma média ponderada dos valores reportados na literatura para cada óleo. A Tabela~\ref{tab:is_literatura} reúne os valores compilados para o óleo de coco e o óleo de soja, bem como a média adotada para cada um.
+O índice de saponificação $I_S$, em mg~KOH/g, é então calculado pela Equação~\ref{eq:is_def}, na qual $V_0$ é o volume de HCl gasto no branco, $V_1$ é o volume gasto na amostra (ambos em ml), $c$ é a concentração do HCl (mol/L), $m$ é a massa da amostra (g) e 56,1 é a massa molar do KOH (g/mol).
+
+\begin{equation}
+    I_S = \frac{(V_0 - V_1) \cdot c \cdot 56{,}1}{m}
+    \label{eq:is_def}
+\end{equation}
+
+Neste trabalho, em vez da determinação experimental, optou-se por estimar o índice de saponificação da mistura a partir de uma média ponderada dos valores reportados na literatura para cada óleo. A Tabela~\ref{tab:is_literatura} reúne os valores compilados para o óleo de coco e o óleo de soja, bem como a média adotada para cada um.
 
 \begin{table}[H]
     \centering
@@ -197,7 +206,7 @@ A otimização do processo foi conduzida variando-se um fator por vez e mantendo
 
 A quantidade de NaOH não foi tratada como variável independente: ela foi sempre determinada pelo índice de saponificação da mistura de óleos, acompanhando, portanto, a proporção entre o babaçu e a soja empregada em cada amostra.
 
-O tempo de reação, por sua vez, também não foi fixado como uma variável controlada. Em vez de se estipular uma duração rígida, a etapa de aquecimento foi conduzida até que a mistura atingisse o ponto de consistência desejado — semelhante a um purê de batatas ou, idealmente, a uma vaselina densa —, validado em conjunto com a medição do pH. Dessa forma, o tempo de reação configura-se mais como um critério de parada do que como um fator de otimização.
+O tempo de reação, por sua vez, também não foi fixado como uma variável controlada. Em vez de se estipular uma duração rígida, a etapa de aquecimento foi conduzida até que a mistura atingisse o ponto de consistência desejado, semelhante a um purê de batatas ou, idealmente, a uma vaselina densa, validado em conjunto com a medição do pH. Dessa forma, o tempo de reação configura-se mais como um critério de parada do que como um fator de otimização.
 
 A Tabela~\ref{tab:variacao_experimentos} resume como as variáveis foram alteradas ao longo das práticas, evidenciando a estratégia de modificar um fator por vez: a proporção entre os óleos nas duas primeiras aulas, o ácido esteárico na terceira e na quarta, e o etanol na quinta e na sexta.
 
@@ -213,10 +222,54 @@ A Tabela~\ref{tab:variacao_experimentos} resume como as variáveis foram alterad
         Dia 1 — amostra 1 & 33 & 0   & 0  \\
         Dia 1 — amostra 2 & 65 & 0   & 0  \\
         Dia 2             & 18 & 0   & 0  \\
-        Dia 3             & 33 & 3,3 & 0  \\
-        Dia 4             & 33 & 1,7 & 0  \\
-        Dia 5             & 37 & 3,3 & 10 \\
-        Dia 6             & 33 & 3,0 & 7  \\
+        Dia 3             & ?? & 3,3 & 0  \\
+        Dia 4             & ?? & 1,7 & 0  \\
+        Dia 5             & ?? & ??  & 10 \\
+        Dia 6             & ?? & ??  & 7  \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+Os dias que estão marcados com "??" ~seriam preenchidos substituídos com os valores da melhor amostra produzida até o momento.
+
+\subsubsection{\textit{Scale-up} para o processo de caldeira}
+
+O processo de caldeira (\textit{kettle process}) usa a mesma química da bancada (saponificação direta dos triglicerídeos), então o \textit{scale-up} não muda a reação: basta escalar a receita e adaptar o equipamento ao volume maior \cite{shreve1984chemical}.
+
+O balanço de massa é a parte direta. Definindo o fator de escala $S$ como a razão entre a massa de óleo da batelada industrial e a da bancada (Equação~\ref{eq:fator_escala}), cada componente da formulação é apenas multiplicado por $S$ (Equação~\ref{eq:massa_escala}); o NaOH segue o índice de saponificação da mistura (Equação~\ref{eq:massa_naoh}) e a água, a regra dos 25\% da massa de óleo.
+
+\begin{equation}
+    S = \frac{M_{\text{óleo}}^{\text{ind}}}{M_{\text{óleo}}^{\text{banc}}}
+    \label{eq:fator_escala}
+\end{equation}
+
+\begin{equation}
+    m_i^{\text{ind}} = S \cdot m_i^{\text{banc}}
+    \label{eq:massa_escala}
+\end{equation}
+
+Os fenômenos de transporte, porém, não escalam na mesma proporção. Mantida a semelhança geométrica, a dimensão característica $L$ cresce com a raiz cúbica do volume (Equação~\ref{eq:geometria}), mas a área de troca de calor aumenta mais devagar do que o volume, fazendo a razão área/volume cair com a escala (Equação~\ref{eq:area_volume}). Por isso o aquecimento por chapa da bancada cede lugar à injeção direta de vapor e a serpentinas internas, e a agitação passa a ser feita pela própria fervura.
+
+\begin{equation}
+    L \propto V^{1/3} \propto S^{1/3}
+    \label{eq:geometria}
+\end{equation}
+
+\begin{equation}
+    \frac{A}{V} \propto \frac{1}{L} \propto S^{-1/3}
+    \label{eq:area_volume}
+\end{equation}
+
+Por fim, a granulação (\textit{salting-out}) separa o glicerol: adiciona-se sal até a fase aquosa atingir uma concentração crítica de eletrólito $C_{\text{grão}}$ (Equação~\ref{eq:salting}, em que $V_{\text{aq}}$ é o volume da fase aquosa e $m_{\text{elet}}^{0}$ o eletrólito já presente), recuperando-se o glicerol — cerca de 10\% da massa de óleo (Equação~\ref{eq:glicerol}, com $\overline{M}_{\text{TG}}$ a massa molar média dos triglicerídeos) — como coproduto de valor, ao contrário da bancada, que o mantém no sabão.
+
+\begin{equation}
+    m_{\text{sal}} \approx C_{\text{grão}}\,V_{\text{aq}} - m_{\text{elet}}^{0}
+    \label{eq:salting}
+\end{equation}
+
+\begin{equation}
+    m_{\text{glicerol}} \approx \frac{M_{\text{glicerol}}}{\overline{M}_{\text{TG}}} \cdot m_{\text{óleo}}
+    \label{eq:glicerol}
+\end{equation}
+
+\textbf{Observação:} uma alternativa seria não realizar o \textit{salting-out}, mantendo o glicerol no próprio sabão para melhorar a sensação tátil do produto. Contudo, essa etapa também remove impurezas — como o excesso de hidróxido de sódio, o sal e a matéria não saponificada — que, sem ela, permaneceriam no sabão e prejudicariam a sua qualidade. Caso necessário, o glicerol separado pode ser adicionado novamente ao sabão.

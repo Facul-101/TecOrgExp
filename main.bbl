@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,10 +43,10 @@ A.~B. Barbosa and R.~R. Silva.
 \newblock Xampus.
 \newblock \emph{Qu{\'i}mica Nova na Escola}, 2\penalty0 (2):\penalty0 3--6, nov 1995.
 
-\bibitem[Shreve(1956)]{shreve1956chemical}
-R.~N. Shreve.
-\newblock \emph{Chemical Process Industries}.
-\newblock McGraw-Hill Book Company, New York, 2 edition, 1956.
+\bibitem[Shreve and Austin(1984)]{shreve1984chemical}
+R.~Norris Shreve and George~T. Austin.
+\newblock \emph{Shreve's Chemical Process Industries}.
+\newblock McGraw-Hill, New York, 5 edition, 1984.
 
 \bibitem[Selinger(1986)]{selinger1986chemistry}
 B.~Selinger.
@@ -86,6 +86,10 @@ Mansi~Amarsing Vasave, Samiksha~Kirtikumar Jain, Samrin Mohammad~Tufail Shaikh, 
 \newblock A herbal soap incorporating orange peel powder: Formulation and therapeutic evaluation.
 \newblock \emph{International Journal of Research in Pharmacy and Allied Science}, 4\penalty0 (10), 2025.
 \newblock \doi{10.71431/IJRPAS.2025.41011}.
+
+\bibitem[{International Organization for Standardization}(2020)]{iso3657}
+{International Organization for Standardization}.
+\newblock Iso 3657:2020 --- animal and vegetable fats and oils --- determination of saponification value, 2020.
 
 \bibitem[Ghani et~al.(2018)Ghani, Channip, Chok Hwee~Hwa, Ja'afar, Yasin, and Usman]{ghani2018physicochemical}
 N.~A.~A. Ghani, A.-A. Channip, P.~Chok Hwee~Hwa, F.~Ja'afar, H.~M. Yasin, and A.~Usman.
