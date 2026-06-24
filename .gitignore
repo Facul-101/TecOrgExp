@@ -1,0 +1,74 @@
+## Core latex/pdflatex auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+## Bibliography auxiliary files (bibtex/biblatex/biber)
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Index files
+*.idx
+*.ilg
+*.ind
+*.ist
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.acn
+*.acr
+*.alg
+
+## Beamer / nomenclature
+*.nav
+*.snm
+*.vrb
+*.nlg
+*.nlo
+*.nls
+
+## TODO notes (todonotes package)
+*.tdo
+
+## Hyperref
+*.brf
+
+## glossaries-extra
+*.lzo
+*.lzs
+
+## Editor / build directories
+build/
+_minted*/
+*.pyg
+
+## OS files
+.DS_Store
+Thumbs.db
